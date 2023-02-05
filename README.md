@@ -3,6 +3,7 @@
 ## MacOS
 
 ### Results
+Summary: Even if the underlying file is changed (a → A), the change doesn't reflect to the mapped memory.
 
 ```
 slice: a, ptr: a, volatile: a
@@ -19,6 +20,8 @@ test finished.
 ```
 
 ## Linux
+
+Summary: If the underlying file is changed (a → A), the change DOES reflect to the mapped memory.
 
 You can run the Linux experiment easily with (replace `podman` with `docker` if you prefer that).
 
