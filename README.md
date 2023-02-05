@@ -47,4 +47,4 @@ test finished.
 
 ## Discussion
 
-As we can see, MacOS protects a MAP_PRIVATE memory map from concurrent external modification, whereas Linux
+As we can see, MacOS protects a MAP_PRIVATE memory map from concurrent external modification, whereas Linux doesn't provide such protection, warranting UB when using mmap.
